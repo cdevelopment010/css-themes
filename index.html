@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h3>Themes</h3>
+    
+    <ul>
+        <li class="list-item">Home</li>
+        <li class="list-item">About</li>
+        <li class="list-item">Projects</li>
+        <li class="list-item">Contact</li>
+        <li class="list-item">Cool links</li>
+    </ul>
+
+    <div>
+        <input type="checkbox" id="dark-mode-toggle" class="toggle dark-mode-toggle" onClick="toggleDarkMode()">
+        <label>Dark-mode</label>
+    </div>
+
+    <select name="theme" id="theme" onChange="selectTheme()">
+        <option value="">Default</option>
+        <option value="dark-mode">Dark Mode</option>
+        <option value="neon">Neon</option>
+        <option value="theme1">Theme 1</option>
+        <option value="theme2">Theme 2</option>
+    </select>
+
+    <script src="index.js"></script>
+</body>
+</html>

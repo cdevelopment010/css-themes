@@ -1,0 +1,76 @@
+:root {
+    --primary-bg-color: #FFFFFF;
+    --text-1: #1C3144;
+    --text-highlight-1: #A2AEBB;
+    --accent-1: #D00000;
+    --text-2: #3F88C5;
+    
+}
+
+body {
+    background: var(--primary-bg-color);
+    color: var(--text-1);
+    font-size: 20px; 
+}
+
+.dark-mode{
+    --primary-bg-color: #413f3f;
+    --text-1: #A2AEBB;
+    --accent-1: #FFBA08;
+}
+
+
+.neon{
+    --primary-bg-color: #FFBE0B;
+    --text-1: #8338EC;
+    --accent-1: #3A86FF;
+}
+
+h3 {
+    color: var(--accent-1);
+    text-align: center;
+}
+
+ul {
+    display:flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.list-item {
+    position: relative; 
+    cursor: pointer;
+    list-style: none;
+}
+
+.list-item::after {
+    content:'';
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    height: 2px; 
+    width: 0%; 
+    background-color: var(--accent-1);
+    transition: width 0.2s;
+}
+
+.list-item:hover::after {
+    width: 100%;
+}
+
+
+.dropdown-container{
+    position: relative; 
+}
+
+.dropdown-menu {
+    position: relative;
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --primary-bg-color: #413f3f;
+        --text-1: #A2AEBB;
+        --accent-1: #FFBA08;
+    }
+}
